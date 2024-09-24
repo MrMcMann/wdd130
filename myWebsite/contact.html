@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="logo">Contact</div>
+      <div class="menu-toggle" onclick="toggleMenu()">
+      </div>
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main content -->
+    <div class="content">
+      <h1>Welcome to My Website</h1>
+      <p>This is a simple website template with a beautiful navbar.</p>
+      <p>Feel free to edit the content, change colors, and more.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+
+    <script>
+      // JavaScript for toggling the mobile menu and changing the hamburger to X
+      function toggleMenu() {
+        const menu = document.getElementById("menu");
+        const menuToggle = document.querySelector(".menu-toggle");
+        const isMenuActive = menu.classList.contains("active");
+
+        // Toggle the menu
+        if (!isMenuActive) {
+          menu.classList.add("active");
+        } else {
+          menu.classList.remove("active");
+        }
+
+        menuToggle.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
